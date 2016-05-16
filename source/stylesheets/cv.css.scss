@@ -46,10 +46,14 @@ a{color:$linkColor; text-decoration:none;}
 .clearfix::after{clear:both;}
 .bold {color:$boldColor; font-weight:400;}
 
-.resume-wrappertje {
+.resume-wrapper {
   position:relative;
   text-align:center;
   height:100%;
+}
+
+.container {
+  min-height:600px;
 }
 
 .profile {
@@ -58,7 +62,7 @@ a{color:$linkColor; text-decoration:none;}
   float:left;
   color:$profileColor;
   @include breakpoint(brother-bear) { width: 100%; }
-  .name-wrappertje {
+  .name-wrapper {
     float:left;
     width:60%;
   }
@@ -80,8 +84,9 @@ a{color:$linkColor; text-decoration:none;}
   }
   li {
       margin-bottom:10px;
+      list-style: none;
     }
-  .picture-resume-wrappertje {
+  .picture-resume-wrapper {
     width:40%;
     display:block;
     float:left;
@@ -186,7 +191,7 @@ a{color:$linkColor; text-decoration:none;}
     margin-bottom:20px;
     font-weight:400;
   }
-  .company-wrappertje {
+  .company-wrapper {
     width:30%;
     float:left;
     text-align:left;
@@ -194,7 +199,7 @@ a{color:$linkColor; text-decoration:none;}
     margin-bottom:60px;
     @include breakpoint(baby-bear) {width:100%; margin-bottom:20px;}
   }
-  .job-wrappertje {
+  .job-wrapper {
     width:70%;
     float:left;
     text-align:left;
@@ -214,7 +219,7 @@ a{color:$linkColor; text-decoration:none;}
  @include breakpoint(baby-bear) { padding:40px 10% 20px 5%; }
 }
 
-.section-wrappertje {
+.section-wrapper {
   width:50%;
   float:left;
   text-align:left;
