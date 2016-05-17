@@ -2,9 +2,9 @@
 # the following line to use 'http://'
 source 'https://rubygems.org'
 
-gem 'middleman-bootstrap-navbar'
 gem "bootstrap-sass"
 gem "jquery-middleman"
+gem 'font-awesome-sass'
 
 
 # For faster file watcher updates on Windows:
