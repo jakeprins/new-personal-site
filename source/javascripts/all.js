@@ -28,7 +28,16 @@ $(function(){
     handler: function(direction) {
       if ( direction === "down") {
         icons.classList.add("is-active");
-      } 
+      }
+    }
+  });
+  var projects = document.querySelector('.projects')
+  new Waypoint({
+    element: document.querySelector("#folio"),
+    handler: function(direction) {
+      if ( direction === "down") {
+        projects.classList.add("is-active");
+      }
     }
   });
 });
