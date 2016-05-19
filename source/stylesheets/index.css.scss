@@ -99,6 +99,16 @@ hr {
   &:focus {color: $red;}
 }
 /*Services*/
+
+.icons {
+  opacity: 0;
+}
+
+.icons.is-active {
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
 .sec-services {background: #f9f9f9;}
 .sec-services i {
   display: block;
